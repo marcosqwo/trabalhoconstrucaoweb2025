@@ -1,0 +1,38 @@
+.fundo{
+    background-color: #000;
+    color: white;
+
+    height: 100vh;
+}
+.menu ul {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    padding: 20px;
+}
+.shadowbox {
+    background-color: #111;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.3);
+}
+
+.menu {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.header-logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    letter-spacing: 2px;
+}
+
+a{text-decoration: none;}
