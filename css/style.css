@@ -1,71 +1,65 @@
-.topo {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    top: 0;
-    left: 0;
-}
-
 .fundo{
     background-color: #000;
     color: white;
     height: auto;
+    margin: 0px 15px 15px 15px;
 }
-.menu ul {
-    display: flex;
-    justify-content: start;
-    gap: 15px;
-    padding: 20px;
-}
+
 .shadowbox {
     background-color: #111;
     color: white;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.3);
-}
-.menu{
-    display: flex;
-    gap: 15px;
-}
-.menu a{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    font-size: 16px;
-}
-.menu a:hover{
-    text-decoration: underline;
-}
-
-.header-logo a{
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-size: 28px;
-    text-transform: uppercase;
-    margin-left: 16px;
-    letter-spacing: 2px;
+    border-radius: 6px;
+    box-shadow: 0 9px 12px 0 rgb(44, 26, 168);
 }
 
 a{
     text-decoration: none;
 }
 
-.menu-item{
+.header {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #05080a;
+    padding: 12px 3px 12px 3px ;
+    margin: 3px 20% 3px 20%;
+}
+.icone {
+   position: absolute;
+    left: 22%;
+}
+.header-logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    letter-spacing: 2px;
+}
+.header-nav ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    font-size: 18px;
 }
 
-.corpodapagina{
-    margin-top: 200px;
+.header-nav a {
+    text-decoration: none;
+    color:white;
+    padding: 14px;
+    border: 1px solid rgb(44, 26, 168);
+    border-radius: 16px;
+    background-color: #222;
+}
+
+.header-nav a:hover {
+    border-radius: 16px;
+    padding: 14px;
+    text-decoration: underline;
+
+}
+
+a.header-nav-active {
+    background-color: rgb(44, 26, 168);
+    color: white;
+    border-radius: 16px;
 }
