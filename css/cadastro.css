@@ -1,0 +1,54 @@
+fieldset {
+    width: 40%;
+    margin: auto;
+    border: none;
+    background-color: #1f262c;
+    box-shadow: 0 9px 12px 0 rgb(44, 26, 168);
+    padding: 30px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+legend {
+    text-align: center;
+    color: transparent;
+}
+
+
+input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.alinhamento{
+    text-align: right;
+    font-size: 16px;
+    margin: 0;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: rgb(44, 26, 168);
+    color: white;
+    margin-left: 30% ;
+    margin-right: 30% ;
+    margin-top: 30px ;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+button:hover{
+    outline: 1px solid rgb(99, 64, 147);
+    background-color: rgb(70, 39, 243);;
+    cursor: pointer;
+
+}

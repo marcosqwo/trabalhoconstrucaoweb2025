@@ -2,12 +2,13 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
     <meta charset="UTF-8">
     <title>Tudo Filmes</title>
 </head>
 <body class="fundo shadowbox">
 <header class="header">
-    <img class="icone" src="./../imgs/cinema.png" >
+    <img class="icone" src="./../imgs/cinema.png">
     <div class="header-logo">Tudo Filmes</div>
     <nav class="header-nav">
         <ul>
@@ -18,5 +19,30 @@
         </ul>
     </nav>
 </header>
+<main>
+    <section class="filmes-container">
+        <h1 class="novidades">Cadastro</h1>
+    </section>
+
+
+<form action="">
+    <fieldset class="form-format">
+        <legend>Informações para o contato</legend>
+        <p class="alinhamento">Todos os campos são obrigatórios</p>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Digite seu email" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha" minlength="8" required>
+        <label for="confimasenha">Confirmar Senha:</label>
+        <input type="password" id="confimasenha" placeholder="Digite sua senha"  minlength="8" required >
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" placeholder="Digite seu telefone" required>
+        <button>Enviar</button>
+    </fieldset>
+</form>
+
+</main>
 </body>
 </html>
