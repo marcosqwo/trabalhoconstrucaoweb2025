@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <meta charset="UTF-8">
+    <title>Tudo Filmes</title>
+</head>
+<body class="fundo shadowbox">
+<header class="header">
+    <img class="icone" src="./imgs/cinema.png">
+    <div class="header-logo">Tudo Filmes</div>
+    <nav class="header-nav">
+        <ul>
+            <li><a class="header-nav-active" href="./index.html">Novidades</a></li>
+            <li><a href="./html/series.html">Séries</a></li>
+            <li><a href="./html/filmes.html">Filmes</a></li>
+            <li><a href="./html/cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="filmes-container">
+        <div class="novidades">
+            Lançamentos
+        </div>
+
+
+        <div id="modal" class="modal">
+           
+            <div class="modal-content">
+                <span class="close">&times;</span>
+              <img id="modal-img" src="" alt="Imagem do filme" width="200" height="300">
+              <p id="modal-sinopse"></p>
+              <button id="modal-assistir">Assistir</button>
+            </div>
+          </div>
+
+
+
+
+
+
+        <figure>
+            <a href="#" data-filme="premonicao" class="abrir-modal">
+                <img src="./imgs/premonicao.jpg" width="200" height="300">
+            </a>
+            <figcaption class="nomefilme">
+                Premonição
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="#" data-filme="minecraft" class="abrir-modal filme">
+                <img src="./imgs/mine.webp" width="200" height="300">
+            </a>
+            <figcaption class="nomefilme">
+                Minecraft
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="#" data-filme="bailarina" class="abrir-modal">
+                <img src="./imgs/ballerina.jpg" width="200" height="300">
+            </a>
+            <figcaption class="nomefilme">
+                Bailarina
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="#" data-filme="thelastofus" class="abrir-modal serie">
+                <img src="./imgs/thelast.webp" width="200" height="300">
+            </a>
+            <figcaption class="nomefilme">
+                The Last of Us
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="#" data-filme="rick" class="abrir-modal serie">
+                <img src="./imgs/rick.png" width="200" height="300">
+            </a>
+            <figcaption class="nomefilme">
+                Rick e Morty
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="#" data-filme="gameofthrones" class="abrir-modal serie">
+                <img src="./imgs/gameofthrones.jpg" width="200" height="300">
+            </a>
+            <figcaption class="nomefilme">
+                Game of Thrones
+            </figcaption>
+        </figure>
+    </section>
+      
+</main>
+        <script src="./scripts/modal.js"></script>
+</body>
+</html>
+
+
