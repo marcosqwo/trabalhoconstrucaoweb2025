@@ -103,7 +103,7 @@ document.getElementById("series").addEventListener("click", (e) => {
   document.querySelectorAll("figure.serie").forEach(el => el.style.display = "inline-block");
 });
 
-// Ao clicar em Filmes
+
 document.getElementById("filmes").addEventListener("click", (e) => {
   e.preventDefault();
   setAtivo("filmes");
