@@ -13,8 +13,8 @@
     <nav class="header-nav">
         <ul>
             <li><a class="header-nav-active" href="./index.html">Novidades</a></li>
-            <li><a href="./html/series.html">Séries</a></li>
-            <li><a href="./html/filmes.html">Filmes</a></li>
+            <li><a id="series" href="#">Séries</a></li>
+            <li><a id="filmes" href="#">Filmes</a></li>
             <li><a href="./html/cadastro.html">Cadastro</a></li>
         </ul>
     </nav>
@@ -31,7 +31,8 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
               <img id="modal-img" src="" alt="Imagem do filme" width="200" height="300">
-              <p id="modal-sinopse"></p>
+              <h3>Sinopse:</h3>
+                <p id="modal-sinopse"></p>
               <button id="modal-assistir">Assistir</button>
             </div>
           </div>
@@ -41,7 +42,7 @@
 
 
 
-        <figure>
+        <figure class="filme">
             <a href="#" data-filme="premonicao" class="abrir-modal">
                 <img src="./imgs/premonicao.jpg" width="200" height="300">
             </a>
@@ -50,15 +51,15 @@
             </figcaption>
         </figure>
 
-        <figure>
-            <a href="#" data-filme="minecraft" class="abrir-modal filme">
+        <figure class="filme">
+            <a href="#" data-filme="minecraft" class="abrir-modal">
                 <img src="./imgs/mine.webp" width="200" height="300">
             </a>
             <figcaption class="nomefilme">
                 Minecraft
             </figcaption>
         </figure>
-        <figure>
+        <figure class="filme">
             <a href="#" data-filme="bailarina" class="abrir-modal">
                 <img src="./imgs/ballerina.jpg" width="200" height="300">
             </a>
@@ -66,24 +67,24 @@
                 Bailarina
             </figcaption>
         </figure>
-        <figure>
-            <a href="#" data-filme="thelastofus" class="abrir-modal serie">
+        <figure class="serie">
+            <a href="#" data-filme="thelastofus" class="abrir-modal">
                 <img src="./imgs/thelast.webp" width="200" height="300">
             </a>
             <figcaption class="nomefilme">
                 The Last of Us
             </figcaption>
         </figure>
-        <figure>
-            <a href="#" data-filme="rick" class="abrir-modal serie">
+        <figure class="serie">
+            <a href="#" data-filme="rick" class="abrir-modal">
                 <img src="./imgs/rick.png" width="200" height="300">
             </a>
             <figcaption class="nomefilme">
                 Rick e Morty
             </figcaption>
         </figure>
-        <figure>
-            <a href="#" data-filme="gameofthrones" class="abrir-modal serie">
+        <figure class="serie">
+            <a href="#" data-filme="gameofthrones" class="abrir-modal">
                 <img src="./imgs/gameofthrones.jpg" width="200" height="300">
             </a>
             <figcaption class="nomefilme">

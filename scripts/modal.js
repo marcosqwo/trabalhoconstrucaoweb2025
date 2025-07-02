@@ -51,13 +51,67 @@ document.querySelectorAll("figure").forEach(fig => {
 });
 
 
-document.querySelector(".close").onclick = function () {
+  document.querySelector(".close").onclick = function () {
   document.getElementById("modal").style.display = "none";
 };
+
 
 window.onclick = function (event) {
 if (event.target == document.getElementById("modal")) {
   document.getElementById("modal").style.display = "none";
 }
 };
+
+document.getElementById("series").addEventListener("click", () => {
+  document.querySelectorAll("figure.filme").forEach(el => {
+    el.style.display = "none";
+  });
+  document.querySelectorAll("figure.serie").forEach(el => {
+    el.style.display = "inline-block";
+  });
+});
+
+document.getElementById("filmes").addEventListener("click", () => {
+  document.querySelectorAll("figure.filme").forEach(el => {
+    el.style.display = "inline-block";
+  });
+  document.querySelectorAll("figure.serie").forEach(el => {
+    el.style.display = "none";
+  });
+});
+
+
+function setAtivo(id) {
+
+  document.querySelectorAll(".header-nav a").forEach(link => {
+    link.classList.remove("header-nav-active");
+  });
+
+
+  const linkAtivo = document.getElementById(id);
+  if (linkAtivo) {
+    linkAtivo.classList.add("header-nav-active");
+  }
+}
+
+
+document.getElementById("series").addEventListener("click", (e) => {
+  e.preventDefault();
+  setAtivo("series");
+
+  document.querySelectorAll("figure.filme").forEach(el => el.style.display = "none");
+  document.querySelectorAll("figure.serie").forEach(el => el.style.display = "inline-block");
+});
+
+// Ao clicar em Filmes
+document.getElementById("filmes").addEventListener("click", (e) => {
+  e.preventDefault();
+  setAtivo("filmes");
+
+  document.querySelectorAll("figure.filme").forEach(el => el.style.display = "inline-block");
+  document.querySelectorAll("figure.serie").forEach(el => el.style.display = "none");
+});
+
+
+
 
